@@ -3,37 +3,44 @@ import "./App.css";
 import styled from 'styled-components' ;
 
 
+
+
 const Button = styled.button`
   /* Adapt the colors based on primary prop */
   background: ${props => props.primary ? "grey" : "white"};
   color: ${props => props.primary ? "white" : "grey"};
 
-  font-size: 1em;
+  font-size:12px;
+  border-radius: 5px;
   margin: 1px;
-  padding: 0.25em 1em;
-  border: 1px solid grey;
-  cursor: pointer;
-  border-radius: 3px;
-`;
+  border: 0.5px solid grey;
+  padding:6px 50px;
+  color: grey;
 
+
+`;
 
 class App extends Component {
   render () {
     return (
 
       <div className="App">
+        <p>Toogle button group</p> 
         
-        <h1> Tokopedia Tower </h1> 
-
-        <Button >Lunch</Button>
-        <Button primary>Dinner</Button> 
-    
+        
+        <div button>
+        <Button >Lunch </Button>
+        <Button >Dinner </Button>
+        </div> 
+          
+      <body> 
         <div class="flex-container">
               <div>1</div>
               <div>2</div>
               <div>3</div>  
         </div>
-      </div>
+      </body>
+        </div>
     )
   }
 }

@@ -2,12 +2,37 @@
   text-align: center;
 }
 
+
 p {
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
 	font-weight: 100;
 
 }
+button:hover {
+	background:grey;
+	color :white;
+}
+button:active {
+	background:grey;
+	color :white;
+}
+button:focus {
+	background:grey;
+	color :white;
+  }
+.flex-container {
+	align-items:center;
+	display: flex;
+	flex-direction: column;
+  }
 
+.flex-container > div {
+	background-color: #f1f1f1;
 
- 
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+  }
