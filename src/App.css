@@ -3,6 +3,7 @@
 }
 
 
+
 p {
 	font-family: proxima-nova, sans-serif;
 	font-style: normal;
@@ -22,22 +23,108 @@ button:focus {
 	color :white;
 	outline:none;
   }
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 .flex-container {
 	align-items:center;
 	display: flex;
 	flex-direction: column;
-	
+
   }
 
-.flex-container > div {
-	background-color: #f1f1f1;
+.card {
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 200px 200px ;
+	grid-template-areas: "image" "text" "btn" ;
+	border-radius: 18px;
+	background: white;
+	box-shadow: 0px 8px 10px rgba(10, 31, 68, 0.1);
+	font-family: roboto;
+	
+	
+	margin:16px;
+  } 
+  .card-text{
+	 text-align: left;
+	 padding-left: 16px;
+	 
 
-	width: 300px;
-	height: 300px ;
-	margin: 10px;
-	text-align: center;
-	line-height: 300px;
-	font-size: 30px;
-	
-	
+
   }
+  .card-text p{
+	font-size: small;
+	color: grey;
+
+  }
+  .card-btn{
+	  grid-area: btn;
+
+	  margin-right:15px;
+	  margin-bottom: 2px;
+      
+      float: right;
+    
+  }
+ 
+  .btn{
+	background:#f9234a;
+	border-radius: 5px;
+	margin: 1px;
+	border: 0.5px white;
+	padding:4px 20px;
+	color: white;
+	align-items:center;
+  }
+  .card-image01 {
+	grid-area: image;
+	background: url("img01.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+  }
+  .card-image02 {
+	grid-area: image;
+	background: url("img02.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+  }
+  .card-image03 {
+	grid-area: image;
+	background: url("img03.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+  }
+  .card-image04 {
+	grid-area: image;
+	background: url("img04.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+  }
+  .card-image05 {
+	grid-area: image;
+	background: url("img05.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+  }
+
+  .calendar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+	background-color: white;
+	
+	}
+	
+
+
+ 
+  

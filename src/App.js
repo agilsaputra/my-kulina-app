@@ -1,19 +1,22 @@
 import React, {Component} from 'react';
 import "./App.css";
 import styled from 'styled-components' ;
-import SimpleReactCalendar from 'simple-react-calendar'
+import Calendar from './calendar';
+
 
 
 
 
 const Button = styled.button`
   /* Adapt the colors based on primary prop */
+  /*  <img src={img01} className="img01" alt="img01" /> */
+  /* import img01 from './img01.jpg'; */
   background: ${props => props.primary ? "grey" : "white"};
   color: ${props => props.primary ? "white" : "grey"};
 
   font-size:12px;
   border-radius: 5px;
-  margin: 1px;
+  margin-top: 10px;
   border: 0.5px solid grey;
   padding:6px 60px;
   color: grey;
@@ -26,8 +29,13 @@ class App extends Component {
     return (
 
       <div className="App">
-        <p>Toogle button group</p> 
-       
+        <p>my kulina apps</p> 
+
+        <div class="calendar">
+
+        <Calendar/>
+        </div>
+
         <div class="button">
         <Button >Lunch </Button>
         <Button >Dinner </Button>
@@ -35,11 +43,76 @@ class App extends Component {
           
       <body> 
         <div class="flex-container">
-              <div>1</div>
+              <div class= "card">
+                <div class="card-image01"> </div>
+                <div class="card-text">
 
-              <div>2</div>
+               <h3> Nasi Rames </h3>
+                <p> by kunia app</p>
+                <div class="flex">
+                <h3 class="harga">Rp 35.000</h3>
+                <div class="card-btn">
+                
+                  <button class="btn" >ADD +</button>
+                  </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class= "card">
+                <div class="card-image02"> </div>
+                <div class="card-text">
+
+                  <h3>Jamur BBQ</h3>
+                  <p>by kulina app</p>
+                  <div class="flex">
+                    <h3 class="harga">Rp 45.000</h3>
+                    <div class="card-btn"><button class="btn" >ADD +</button></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class= "card">
+                <div class="card-image03"> </div>
+                <div class="card-text">
+
+                  <h3>Nasi Kuning</h3>
+                  <p>by kulina app</p>
+                <div class="flex">
+                  <h3 class="harga">Rp 55.000</h3>
+                  <div class="card-btn"><button class="btn" >ADD +</button></div>
+                </div>
+                </div>
+              </div>
+
+              <div class= "card">
+                <div class="card-image04"> </div>
+                <div class="card-text">
+
+                <h3>Beef Grill</h3>
+                <p>by kulina app</p>
+                <div class="flex">
+                  <h3 class="harga">Rp 15.000</h3>
+                  <div class="card-btn"><button class="btn" >ADD +</button></div>
+                </div>
+                </div>
+              </div>
+
+              <div class= "card">
+                <div class="card-image05"> </div>
+                <div class="card-text">
+
+                <h3>Kepiting SaosTiram</h3>
+                <p>by kulina app</p>
+                <div class="flex">
+                <h3 class="harga">Rp 25.000</h3>
+                <div class="card-btn"><button class="btn" >ADD +</button></div>
+                </div>
+                </div>
+              </div>
               
-              <div>3</div>  
+
         </div>
       </body>
 
