@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import "./App.css";
 import styled from 'styled-components' ;
 import Calendar from './calendar';
+import ExampleApp from './modal';
+import Addtocart from './addtocart';
 
 
 
@@ -27,10 +29,16 @@ const Button = styled.button`
 class App extends Component {
   render () {
     return (
-
+   
       <div className="App">
-        <p>my kulina apps</p> 
-
+      
+      <div class="modaltitle"> <div class="label-lokasi"> <p>
+         ALAMAT PENGANTARAN</p> </div>
+        <div class="lokasi"><p>Tokopedia Tower</p></div>
+        
+        <ExampleApp/></div>
+        
+       
         <div class="calendar">
 
         <Calendar/>
@@ -52,8 +60,8 @@ class App extends Component {
                 <div class="flex">
                 <h3 class="harga">Rp 35.000</h3>
                 <div class="card-btn">
-                
-                  <button class="btn" >ADD +</button>
+                <Addtocart/>
+                  
                   </div>
                   </div>
 
@@ -68,7 +76,7 @@ class App extends Component {
                   <p>by kulina app</p>
                   <div class="flex">
                     <h3 class="harga">Rp 45.000</h3>
-                    <div class="card-btn"><button class="btn" >ADD +</button></div>
+                    <div class="card-btn"><Addtocart/></div>
                   </div>
                 </div>
               </div>
@@ -81,7 +89,7 @@ class App extends Component {
                   <p>by kulina app</p>
                 <div class="flex">
                   <h3 class="harga">Rp 55.000</h3>
-                  <div class="card-btn"><button class="btn" >ADD +</button></div>
+                  <div class="card-btn"><Addtocart/></div>
                 </div>
                 </div>
               </div>
@@ -94,7 +102,7 @@ class App extends Component {
                 <p>by kulina app</p>
                 <div class="flex">
                   <h3 class="harga">Rp 15.000</h3>
-                  <div class="card-btn"><button class="btn" >ADD +</button></div>
+                  <div class="card-btn"><Addtocart/></div>
                 </div>
                 </div>
               </div>
@@ -107,7 +115,7 @@ class App extends Component {
                 <p>by kulina app</p>
                 <div class="flex">
                 <h3 class="harga">Rp 25.000</h3>
-                <div class="card-btn"><button class="btn" >ADD +</button></div>
+                <div class="card-btn"><Addtocart/></div>
                 </div>
                 </div>
               </div>
