@@ -150,6 +150,7 @@ button:focus {
 		bottom: 0px;
 		background-color:white;
 		overflow: hidden;
+		outline:none;
 	  }
 	.Overlay {
 		position: fixed;
@@ -162,7 +163,7 @@ button:focus {
 .content-modal h3 {
 
 	margin-left:25px;
-	color: grey ;
+	color: #424749 ;
 	margin-top:50px;
 	font-family: proxima-nova, sans-serif;
 	
@@ -175,8 +176,9 @@ button:focus {
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
-	border-radius: 18px;
+	border-radius: 10px;
 	background-color:#a23530;
+	outline:none;
 	
 
 }
@@ -186,6 +188,17 @@ input{
 	
 
 	
+}
+.content-cart p{
+
+	margin-left:30px;
+	color:white;
+	font-size: 18px;
+	font-family: proxima-nova, sans-serif;
+	
+	
+
+
 }
 .OverlayCart{
 	position: fixed;

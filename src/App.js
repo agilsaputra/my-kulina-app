@@ -4,6 +4,7 @@ import styled from 'styled-components' ;
 import Calendar from './calendar';
 import ExampleApp from './modal';
 import Addtocart from './addtocart';
+import Icon from './iconbutton';
 
 
 
@@ -23,6 +24,7 @@ const Button = styled.button`
   padding:6px 60px;
   color: grey;
   align-items:center;
+  
 
 `;
 
@@ -31,19 +33,22 @@ class App extends Component {
     return (
    
       <div className="App">
-      
-      <div class="modaltitle"> <div class="label-lokasi"> <p>
-         ALAMAT PENGANTARAN</p> </div>
-        <div class="lokasi"><p>Tokopedia Tower</p></div>
+       
+      <div class="modaltitle"> 
+      <Icon/>
+      <div class="label-lokasi"> 
+      <p>ALAMAT PENGANTARAN</p> </div>
+
+      <div class="lokasi"><p>Tokopedia Tower</p></div>
         
-        <ExampleApp/></div>
-        
+        <ExampleApp/> </div>
+       
        
         <div class="calendar">
 
         <Calendar/>
         </div>
-
+       
         <div class="button">
         <Button >Lunch </Button>
         <Button >Dinner </Button>

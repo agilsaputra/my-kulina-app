@@ -1,6 +1,8 @@
 
 import React from 'react';
 import Modal from 'react-modal';
+import CloseOutlinedIcon from '@material-ui/icons/CloseOutlined';
+import IconButton from '@material-ui/core/IconButton';
 
 
 
@@ -35,8 +37,9 @@ class Cart extends React.Component {
              contentLabel="label"
           >
              
-            <button onClick={this.handleCloseModal}>Close Modal</button>
-           <div class="content-cart"><h3></h3>
+            <IconButton onClick={this.handleCloseModal}><CloseOutlinedIcon/></IconButton>
+           <div class="content-cart">
+             <p>5 items |  Rp 125.000</p>
           </div></Modal>
         </div>
       );
