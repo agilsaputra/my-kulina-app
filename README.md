@@ -5,6 +5,10 @@
 styled-components
 https://styled-components.com/
 
+## live Application URL
+
+https://agilsaputra.github.io/deploy_react/
+
 ## Component Dari NPM
 https://www.npmjs.com/package/react-modal
 
