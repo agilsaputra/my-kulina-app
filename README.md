@@ -6,7 +6,7 @@ styled-components
 https://styled-components.com/
 
 ## live Application URL
-
+This URL has the application deployed in
 https://agilsaputra.github.io/deploy_react/
 
 ## Component Dari NPM
