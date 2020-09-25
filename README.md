@@ -1,4 +1,3 @@
-## Submission to Preliminary Test - Frontend Developer
 
 
 ### CSS Framework 
