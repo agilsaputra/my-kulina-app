@@ -39,7 +39,7 @@ class App extends Component {
       <div class="label-lokasi"> 
       <p>ALAMAT PENGANTARAN</p> </div>
 
-      <div class="lokasi"><p>Tokopedia Tower</p></div>
+      <div class="lokasi"><p>toplet tower</p></div>
         
         <ExampleApp/> </div>
        
